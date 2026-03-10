@@ -573,9 +573,6 @@ Created and maintained by **Jacques Ackermann**.
 ---
 
 <div align="center">
-
-**🎭 The Agency: Your AI Dream Team Awaits 🎭**
-
 Made with ❤️ by Jacques Ackermann
 
 </div>
