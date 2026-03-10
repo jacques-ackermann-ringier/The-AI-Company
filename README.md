@@ -1,6 +1,6 @@
 # 🎭 The AI Company: AI Specialists Ready to Transform Your Workflow
 
-> **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+> **A complete AI company at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
@@ -9,7 +9,7 @@
 
 ## 🚀 What Is This?
 
-**The Agency** is a growing collection of meticulously crafted AI agent personalities. Each agent is:
+**The AI Company** is a growing collection of meticulously crafted AI agent personalities. Each agent is:
 
 - **🎯 Specialized**: Deep expertise in their domain (not generic prompt templates)
 - **🧠 Personality-Driven**: Unique voice, communication style, and approach
@@ -63,7 +63,7 @@ See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for f
 
 ---
 
-## 🎨 The Agency Roster
+## 🎨 The Company Roster
 
 ### 💻 Engineering Division
 
@@ -235,7 +235,7 @@ The unique specialists who don't fit in a box.
 
 ---
 
-### Scenario 4: Full Agency Product Discovery
+### Scenario 4: Full Company Product Discovery
 
 **Your Team**: All 8 divisions working in parallel on a single mission.
 
@@ -336,13 +336,13 @@ Each agent is designed with:
 
 ## 🔌 Multi-Tool Integrations
 
-The Agency works natively with Claude Code, and ships conversion + install scripts so you can use the same agents across every major agentic coding tool.
+The Company works natively with Claude Code, and ships conversion + install scripts so you can use the same agents across every major agentic coding tool.
 
 ### Supported Tools
 
 - **[Claude Code](https://claude.ai/code)** — native `.md` agents, no conversion needed → `~/.claude/agents/`
 - **[Antigravity](https://github.com/google-gemini/antigravity)** — `SKILL.md` per agent → `~/.gemini/antigravity/skills/`
-- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — extension + `SKILL.md` files → `~/.gemini/extensions/agency-agents/`
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — extension + `SKILL.md` files → `~/.gemini/extensions/Company-agents/`
 - **[OpenCode](https://opencode.ai)** — `.md` agent files → `.opencode/agent/`
 - **[Cursor](https://cursor.sh)** — `.mdc` rule files → `.cursor/rules/`
 - **[Aider](https://aider.chat)** — single `CONVENTIONS.md` → `./CONVENTIONS.md`
@@ -366,7 +366,7 @@ The installer scans your system for installed tools, shows a checkbox UI, and le
 
 ```
   +------------------------------------------------+
-  |   The Agency -- Tool Installer                 |
+  |   The Company -- Tool Installer                 |
   +------------------------------------------------+
 
   System scan: [*] = detected on this machine
@@ -419,7 +419,7 @@ See [integrations/claude-code/README.md](integrations/claude-code/README.md) for
 <details>
 <summary><strong>Antigravity (Gemini)</strong></summary>
 
-Each agent becomes a skill in `~/.gemini/antigravity/skills/agency-<slug>/`.
+Each agent becomes a skill in `~/.gemini/antigravity/skills/Company-<slug>/`.
 
 ```bash
 ./scripts/install.sh --tool antigravity
@@ -427,7 +427,7 @@ Each agent becomes a skill in `~/.gemini/antigravity/skills/agency-<slug>/`.
 
 Activate in Gemini with Antigravity:
 ```
-@agency-frontend-developer review this React component
+@Company-frontend-developer review this React component
 ```
 
 See [integrations/antigravity/README.md](integrations/antigravity/README.md) for details.
@@ -452,7 +452,7 @@ Agents are placed in `.opencode/agent/` in your project root (project-scoped).
 
 ```bash
 cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool opencode
+/path/to/Company-agents/scripts/install.sh --tool opencode
 ```
 
 Or install globally:
@@ -476,7 +476,7 @@ Each agent becomes a `.mdc` rule file in `.cursor/rules/` of your project.
 
 ```bash
 cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool cursor
+/path/to/Company-agents/scripts/install.sh --tool cursor
 ```
 
 Rules are auto-applied when Cursor detects them in the project. Reference them explicitly:
@@ -494,7 +494,7 @@ All agents are compiled into a single `CONVENTIONS.md` file that Aider reads aut
 
 ```bash
 cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool aider
+/path/to/Company-agents/scripts/install.sh --tool aider
 ```
 
 Then reference agents in your Aider session:
@@ -512,7 +512,7 @@ All agents are compiled into `.windsurfrules` in your project root.
 
 ```bash
 cd /your/project
-/path/to/agency-agents/scripts/install.sh --tool windsurf
+/path/to/Company-agents/scripts/install.sh --tool windsurf
 ```
 
 Reference agents in Windsurf's Cascade:
