@@ -25,12 +25,14 @@
 ### Option 1: Use with Claude Code (Recommended)
 
 ```bash
-# Copy agents to your Claude Code directory
-cp -r agency-agents/* ~/.claude/agents/
+# Install all agents to your Claude Code directory
+./scripts/install.sh --tool claude-code
 
 # Now activate any agent in your Claude Code sessions:
-# "Hey Claude, activate Frontend Developer mode and help me build a React component"
+# "Activate Frontend Developer and help me build a React component"
 ```
+
+> **Windows users**: Run the scripts in **Git Bash** or **WSL**. The installer writes to `~/.claude/agents/` which maps to `C:\Users\<you>\.claude\agents\` in Git Bash.
 
 ### Option 2: Use as Reference
 
@@ -77,6 +79,9 @@ Building the future, one commit at a time.
 | ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md) | Fast POC development, MVPs | Quick proof-of-concepts, hackathon projects, fast iteration |
 | 💎 [Senior Developer](engineering/engineering-senior-developer.md) | Laravel/Livewire, advanced patterns | Complex implementations, architecture decisions |
 | 🔒 [Security Engineer](engineering/engineering-security-engineer.md) | Threat modeling, secure code review, security architecture | Application security, vulnerability assessment, security CI/CD |
+| ⚙️ [Autonomous Optimization Architect](engineering/engineering-autonomous-optimization-architect.md) | Self-improving systems, performance guardrails, cost control | Autonomous system tuning, API optimization, financial safety rails |
+| 🗄️ [Data Engineer](engineering/engineering-data-engineer.md) | Data pipelines, lakehouse architecture, ETL/ELT, dbt, Spark | Data infrastructure, analytics platforms, streaming systems |
+| ✍️ [Technical Writer](engineering/engineering-technical-writer.md) | Developer docs, API references, READMEs, tutorials | Documentation, onboarding guides, developer experience |
 
 ### 🎨 Design Division
 
@@ -91,6 +96,7 @@ Making it beautiful, usable, and delightful.
 | 📖 [Visual Storyteller](design/design-visual-storyteller.md) | Visual narratives, multimedia content | Compelling visual stories, brand storytelling |
 | ✨ [Whimsy Injector](design/design-whimsy-injector.md) | Personality, delight, playful interactions | Adding joy, micro-interactions, Easter eggs, brand personality |
 | 📷 [Image Prompt Engineer](design/design-image-prompt-engineer.md) | AI image generation prompts, photography | Photography prompts for Midjourney, DALL-E, Stable Diffusion |
+| 🌍 [Inclusive Visuals Specialist](design/design-inclusive-visuals-specialist.md) | Bias-defeating image prompts, authentic representation | Defeating AI stereotypes, culturally accurate visuals, inclusive imagery |
 
 ### 📢 Marketing Division
 
@@ -119,6 +125,7 @@ Building the right thing at the right time.
 | 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md) | Agile planning, feature prioritization | Sprint planning, resource allocation, backlog management |
 | 🔍 [Trend Researcher](product/product-trend-researcher.md) | Market intelligence, competitive analysis | Market research, opportunity assessment, trend identification |
 | 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | User feedback analysis, insights extraction | Feedback analysis, user insights, product priorities |
+| 🧠 [Behavioral Nudge Engine](product/product-behavioral-nudge-engine.md) | Behavioral psychology, motivation design, habit formation | Engagement optimization, reducing churn, adaptive coaching |
 
 ### 🎬 Project Management Division
 
@@ -139,12 +146,7 @@ Breaking things so users don't have to.
 | Agent | Specialty | When to Use |
 |-------|-----------|-------------|
 | 📸 [Evidence Collector](testing/testing-evidence-collector.md) | Screenshot-based QA, visual proof | UI testing, visual verification, bug documentation |
-| 🔍 [Reality Checker](testing/testing-reality-checker.md) | Evidence-based certification, quality gates | Production readiness, quality approval, release certification |
-| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md) | Test evaluation, metrics analysis | Test output analysis, quality insights, coverage reporting |
-| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | Performance testing, optimization | Speed testing, load testing, performance tuning |
 | 🔌 [API Tester](testing/testing-api-tester.md) | API validation, integration testing | API testing, endpoint verification, integration QA |
-| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md) | Technology assessment, tool selection | Evaluating tools, software recommendations, tech decisions |
-| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md) | Process analysis, workflow improvement | Process optimization, efficiency gains, automation opportunities |
 | ♿ [Accessibility Auditor](testing/testing-accessibility-auditor.md) | WCAG auditing, assistive technology testing | Accessibility compliance, screen reader testing, inclusive design verification |
 
 ### 🛟 Support Division
@@ -186,6 +188,8 @@ The unique specialists who don't fit in a box.
 | 📈 [Data Consolidation Agent](specialized/data-consolidation-agent.md) | Sales data aggregation, dashboard reports | Territory summaries, rep performance, pipeline snapshots |
 | 📬 [Report Distribution Agent](specialized/report-distribution-agent.md) | Automated report delivery | Territory-based report distribution, scheduled sends |
 | 🔐 [Agentic Identity & Trust Architect](specialized/agentic-identity-trust.md) | Agent identity, authentication, trust verification | Multi-agent identity systems, agent authorization, audit trails |
+| 🌍 [Cultural Intelligence Strategist](specialized/specialized-cultural-intelligence-strategist.md) | CQ auditing, invisible exclusion detection, global context | Cross-cultural UX review, intersectional inclusivity, localization strategy |
+| 📣 [Developer Advocate](specialized/specialized-developer-advocate.md) | Developer community, DX optimization, platform adoption | Developer docs, community building, SDK onboarding, technical content |
 
 ---
 
@@ -322,7 +326,7 @@ Each agent is designed with:
 
 ## 📊 Stats
 
-- 🎭 **61 Specialized Agents** across 9 divisions
+- 🎭 **63 Specialized Agents** across 9 divisions
 - 📝 **10,000+ lines** of personality, process, and code examples
 - ⏱️ **Months of iteration** from real-world usage
 - 🌟 **Battle-tested** in production environments
@@ -432,7 +436,7 @@ See [integrations/antigravity/README.md](integrations/antigravity/README.md) for
 <details>
 <summary><strong>Gemini CLI</strong></summary>
 
-Installs as a Gemini CLI extension with 61 skills + a manifest.
+Installs as a Gemini CLI extension with 63 skills + a manifest.
 
 ```bash
 ./scripts/install.sh --tool gemini-cli
@@ -561,7 +565,7 @@ Created and maintained by **Jacques Ackermann**.
 ## 🚀 Get Started
 
 1. **Browse** the agents above and find specialists for your needs
-2. **Copy** the agents to `~/.claude/agents/` for Claude Code integration
+2. **Install** with `./scripts/install.sh --tool claude-code` (or run `./scripts/install.sh` for all tools)
 3. **Activate** agents by referencing them in your Claude conversations
 4. **Customize** agent personalities and workflows for your specific needs
 5. **Share** your results and contribute back to the community
@@ -569,6 +573,8 @@ Created and maintained by **Jacques Ackermann**.
 ---
 
 <div align="center">
+
+**🎭 The Agency: Your AI Dream Team Awaits 🎭**
 
 Made with ❤️ by Jacques Ackermann
 
